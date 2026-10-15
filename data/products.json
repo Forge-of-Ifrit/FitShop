@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Whey Protein Isolate",
+    "price": 149.0,
+    "description": "High-quality whey protein isolate for muscle recovery and daily protein support.",
+    "category": "Supplements",
+    "image": "https://i.postimg.cc/J43nmgVM/Whey-Protein-Isolate.png"
+  },
+  {
+    "id": 2,
+    "title": "Creatine Monohydrate",
+    "price": 89.0,
+    "description": "Pure creatine monohydrate to help improve strength, power, and workout performance.",
+    "category": "Supplements",
+    "image": "https://i.postimg.cc/v8VT2T0Q/Creatine-Monohydrate.png"
+  },
+  {
+    "id": 3,
+    "title": "BCAA Amino Energy",
+    "price": 79.0,
+    "description": "Amino acid support formula designed for energy, endurance, and post-workout recovery.",
+    "category": "Supplements",
+    "image": "https://i.postimg.cc/HL4S0XN4/BCAA-Amino-Energy.png"
+  },
+  {
+    "id": 4,
+    "title": "Pre-Workout Booster",
+    "price": 99.0,
+    "description": "Pre-workout formula to increase focus, energy, and training intensity before exercise.",
+    "category": "Supplements",
+    "image": "https://i.postimg.cc/fTqQmndw/Pre-Workout-Booster.png"
+  },
+  {
+    "id": 5,
+    "title": "Resistance Bands Set",
+    "price": 59.0,
+    "description": "Set of resistance bands for stretching, strength training, and home workouts.",
+    "category": "Equipment",
+    "image": "https://i.postimg.cc/qRx9790f/Resistance-Bands-Set.png"
+  },
+  {
+    "id": 6,
+    "title": "Adjustable Dumbbells",
+    "price": 299.0,
+    "description": "Compact adjustable dumbbells for flexible strength training at different weight levels.",
+    "category": "Equipment",
+    "image": "https://i.postimg.cc/cL6Zb4WK/Adjustable-Dumbbells.png"
+  },
+  {
+    "id": 7,
+    "title": "Yoga Mat Pro",
+    "price": 129.0,
+    "description": "Comfortable non-slip yoga mat for stretching, yoga sessions, and floor exercises.",
+    "category": "Equipment",
+    "image": "https://i.postimg.cc/tTNLgLb2/Yoga-Mat-Pro.png"
+  },
+  {
+    "id": 8,
+    "title": "Gym Water Bottle",
+    "price": 39.0,
+    "description": "Durable reusable water bottle designed for hydration during gym and outdoor workouts.",
+    "category": "Accessories",
+    "image": "https://i.postimg.cc/ZK5hWKCV/Gym-Water-Bottle.png"
+  },
+  {
+    "id": 9,
+    "title": "Fitness Gloves",
+    "price": 49.0,
+    "description": "Training gloves that improve grip and help protect hands during lifting sessions.",
+    "category": "Accessories",
+    "image": "https://i.postimg.cc/g2wFKSyL/Fitness-Gloves.png"
+  },
+  {
+    "id": 10,
+    "title": "Massage Gun Pro",
+    "price": 399.0,
+    "description": "Portable massage gun for muscle relaxation, soreness relief, and recovery after workouts.",
+    "category": "Electronics",
+    "image": "https://i.postimg.cc/02yqz2bB/Massage-Gun-Pro.png"
+  }
+]
