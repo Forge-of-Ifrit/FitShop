@@ -239,8 +239,8 @@ struct CartView: View {
             if let myError = myError {
                 message = myError.localizedDescription
             } else {
+                // The live listener in readLiveCart() updates the badge count.
                 message = "Quantity updated successfully"
-                cartItemCount += 1
             }
 
         }
@@ -266,8 +266,8 @@ struct CartView: View {
             if let myError = myError {
                 message = myError.localizedDescription
             } else {
+                // The live listener in readLiveCart() updates the badge count.
                 message = "Quantity updated successfully"
-                cartItemCount -= 1
             }
 
         }
@@ -283,8 +283,8 @@ struct CartView: View {
                 if let myError = myError {
                     message = myError.localizedDescription
                 } else {
+                    // The live listener in readLiveCart() updates the badge count.
                     message = "Item Deleted Successfully"
-                    cartItemCount -= aItem.quantity
                 }
 
             }

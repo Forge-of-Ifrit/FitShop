@@ -6,7 +6,8 @@
 import Foundation
 
 // This URL is the JSON endpoint used to load the product list.
-let productsURLString = "https://32171ce925de46009a30e6f7007930d7.api.mockbin.io/"
+// The catalog is stored in this repository (data/products.json) so it never expires.
+let productsURLString = "https://raw.githubusercontent.com/Forge-of-Ifrit/FitShop/main/data/products.json"
 
 // This model represents one product from the JSON file.
 struct Product: Codable, Identifiable {

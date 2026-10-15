@@ -4,6 +4,7 @@
 //
 
 import SwiftUI
+import UIKit
 import FirebaseAuth
 import FirebaseFirestore
 
@@ -207,7 +208,9 @@ struct ProfileView: View {
         }
 
         guard let myImage = myImage else { return }
-        guard let imageData = myImage.jpegData(compressionQuality: 0.3) else { return }
+
+        // The photo is resized first so the Base64 text stays far below Firestore's 1 MB document limit.
+        guard let imageData = resizedImage(myImage, maxSide: 600).jpegData(compressionQuality: 0.5) else { return }
 
         let base64String = imageData.base64EncodedString()
 
@@ -221,6 +224,30 @@ struct ProfileView: View {
                 message = "Profile photo saved successfully"
             }
 
+        }
+
+    }
+
+    // This function shrinks an image so its longest side is at most maxSide points.
+    // Smaller photos are returned unchanged.
+    func resizedImage(_ image: UIImage, maxSide: CGFloat) -> UIImage {
+
+        let longestSide = max(image.size.width, image.size.height)
+
+        if longestSide <= maxSide {
+            return image
+        }
+
+        let scale = maxSide / longestSide
+        let newSize = CGSize(width: image.size.width * scale, height: image.size.height * scale)
+
+        let format = UIGraphicsImageRendererFormat.default()
+        format.scale = 1
+
+        let renderer = UIGraphicsImageRenderer(size: newSize, format: format)
+
+        return renderer.image { _ in
+            image.draw(in: CGRect(origin: .zero, size: newSize))
         }
 
     }
