@@ -1,0 +1,10 @@
+# Firebase config (each developer adds their own)
+GoogleService-Info.plist
+# Xcode
+xcuserdata/
+DerivedData/
+build/
+*.xcuserstate
+# macOS
+.DS_Store
+__MACOSX/
