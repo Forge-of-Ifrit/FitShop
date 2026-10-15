@@ -63,7 +63,9 @@ Project/
 ├── ProfileView, EditProfileView, SettingsView,
 │   CameraManager                                # Profile & settings
 ├── Product, CartItem, Profile                   # Models
-└── Assets.xcassets/                             # Category artwork
+└── Assets.xcassets/                             # App icon & category artwork
+data/
+└── products.json                                # Product catalog the app downloads
 ```
 
 ## Getting started
@@ -75,6 +77,14 @@ Requirements: **Xcode 26** or later. Firebase is added through Swift Package Man
 3. Download `GoogleService-Info.plist` and put it in the `Project/` folder. (`GoogleService-Info.plist.example` shows the expected format. The real file is git-ignored.)
 4. In Firebase, turn on **Authentication → Email/Password** and create a **Cloud Firestore** database.
 5. Choose an iPhone simulator and press **Run** (⌘R).
+
+## Updates since submission
+
+- **Camera permission:** added the camera and photo-library usage descriptions, so taking a profile photo no longer crashes on a real device.
+- **Reliable catalog:** the product list moved from a temporary mock API into this repo (`data/products.json`).
+- **Profile photos:** images are resized to 600 px before saving, keeping them well under Firestore's 1 MB document limit.
+- **Cart badge:** the badge now comes only from the live Firestore listener, which fixes an off-by-one count.
+- **App icon:** added a FitShop app icon.
 
 ## Possible improvements
 
